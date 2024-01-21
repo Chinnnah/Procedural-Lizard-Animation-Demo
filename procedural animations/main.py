@@ -5,7 +5,7 @@ pygame.init()
 screen_size = [500, 500]
 screen = pygame.display.set_mode(screen_size)
 pygame.display.set_caption("Procedural Animations")
-pygame.display.set_icon(pygame.transform.scale(pygame.image.load(os.path.join("Assets/Images", "icon.png")).convert(),(32,32))) 
+pygame.display.set_icon(pygame.transform.scale(pygame.image.load(os.path.join("procedural animations/Assets/Images", "icon.png")).convert(),(32,32))) 
 
 # Global variables
 game_start_time = time.time()
@@ -111,7 +111,7 @@ cc = Creature(
 
 movement_speed, slithering_size, slithering_timer_multiplier = 0.125, 0.55, 0.0155
 
-image = pygame.image.load(os.path.join("Assets/Images", "background.png")).convert_alpha()
+image = pygame.image.load(os.path.join("procedural animations/Assets/Images", "background.png")).convert_alpha()
 image = pygame.transform.scale(image, (screen.get_width(), image.get_height() * (screen.get_width() / image.get_width())))
 
 # Main loop
